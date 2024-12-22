@@ -1,0 +1,17 @@
+/* Base styles */
+@import './base/variables.css';
+@import './base/reset.css';
+@import './base/typography.css';
+
+/* Layout styles */
+@import './layout/header.css';
+@import './layout/sidebar.css';
+@import './layout/main-content.css';
+
+/* Component styles */
+@import './components/button.css';
+@import './components/card.css';
+@import './components/table.css';
+
+/* Utility styles */
+@import './utilities/utilities.css';

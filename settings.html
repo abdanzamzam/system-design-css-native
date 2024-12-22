@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>POS Settings</title>
+  <link rel="stylesheet" href="css/base/reset.css">
+  <link rel="stylesheet" href="css/base/variables.css">
+  <link rel="stylesheet" href="css/base/typography.css">
+  <link rel="stylesheet" href="css/layout/header.css">
+  <link rel="stylesheet" href="css/layout/sidebar.css">
+  <link rel="stylesheet" href="css/layout/main-content.css">
+  <link rel="stylesheet" href="css/components/button.css">
+  <link rel="stylesheet" href="css/components/card.css">
+  <link rel="stylesheet" href="css/utilities/utilities.css">
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header">
+    <h1>POS Settings</h1>
+    <nav>
+      <a href="#" class="button">Logout</a>
+    </nav>
+  </header>
+
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <h2>Menu</h2>
+    <ul>
+      <li><a href="index.html">Dashboard</a></li>
+      <li><a href="sales.html">Sales</a></li>
+      <li><a href="inventory.html">Inventory</a></li>
+      <li><a href="reports.html">Reports</a></li>
+      <li><a href="settings.html">Settings</a></li>
+    </ul>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <section class="mb-2">
+      <div class="card">
+        <h2 class="card-header">Settings Overview</h2>
+        <div class="card-body">
+          <p>Customize your POS system preferences.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="card">
+        <h2 class="card-header">User Preferences</h2>
+        <div class="card-body">
+          <form>
+            <div class="mb-1">
+              <label for="username">Username:</label>
+              <input type="text" id="username" name="username" class="w-100" placeholder="Enter your username">
+            </div>
+
+            <div class="mb-1">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" class="w-100" placeholder="Enter your email">
+            </div>
+
+            <div class="mb-1">
+              <label for="password">Password:</label>
+              <input type="password" id="password" name="password" class="w-100" placeholder="Enter a new password">
+            </div>
+
+            <div class="mb-1">
+              <button type="submit" class="button button-success">Save Changes</button>
+              <button type="reset" class="button button-danger">Reset</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>

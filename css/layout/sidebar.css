@@ -1,0 +1,66 @@
+/* =============================
+    Sidebar Layout Styles
+   ============================= */
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    /* Default sidebar width */
+    height: 100vh;
+    /* Full viewport height */
+    background-color: var(--dark-color);
+    color: var(--white);
+    padding: var(--spacing-unit);
+    overflow-y: auto;
+    box-shadow: var(--shadow-md);
+}
+
+.sidebar h2 {
+    font-size: 1.25rem;
+    margin-bottom: var(--spacing-md);
+    color: var(--white);
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: var(--spacing-sm);
+}
+
+.sidebar ul li a {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: var(--white);
+    text-decoration: none;
+    border-radius: var(--border-radius-sm);
+    transition: background-color 0.3s ease;
+}
+
+.sidebar ul li a:hover {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .sidebar {
+        position: relative;
+        width: 100%;
+        height: auto;
+        box-shadow: none;
+    }
+
+    .sidebar ul li {
+        display: inline-block;
+        margin-right: var(--spacing-sm);
+    }
+
+    .sidebar ul li a {
+        padding: 0.5rem;
+    }
+}

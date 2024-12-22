@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>POS Inventory</title>
+  <link rel="stylesheet" href="css/base/reset.css">
+  <link rel="stylesheet" href="css/base/variables.css">
+  <link rel="stylesheet" href="css/base/typography.css">
+  <link rel="stylesheet" href="css/layout/header.css">
+  <link rel="stylesheet" href="css/layout/sidebar.css">
+  <link rel="stylesheet" href="css/layout/main-content.css">
+  <link rel="stylesheet" href="css/components/button.css">
+  <link rel="stylesheet" href="css/components/card.css">
+  <link rel="stylesheet" href="css/components/table.css">
+  <link rel="stylesheet" href="css/utilities/utilities.css">
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header">
+    <h1>POS Inventory</h1>
+    <nav>
+      <a href="#" class="button">Logout</a>
+    </nav>
+  </header>
+
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <h2>Menu</h2>
+    <ul>
+      <li><a href="index.html">Dashboard</a></li>
+      <li><a href="sales.html">Sales</a></li>
+      <li><a href="inventory.html">Inventory</a></li>
+      <li><a href="reports.html">Reports</a></li>
+      <li><a href="settings.html">Settings</a></li>
+    </ul>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <section class="mb-2">
+      <div class="card">
+        <h2 class="card-header">Inventory Overview</h2>
+        <div class="card-body">
+          <p>Track and manage your stock levels efficiently.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="card">
+        <h2 class="card-header">Current Stock</h2>
+        <div class="card-body">
+          <table class="table table-secondary">
+            <thead>
+              <tr>
+                <th>Product ID</th>
+                <th>Product Name</th>
+                <th>Category</th>
+                <th>Stock Quantity</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>101</td>
+                <td>Apple iPhone 14</td>
+                <td>Electronics</td>
+                <td>15</td>
+                <td>In Stock</td>
+              </tr>
+              <tr>
+                <td>102</td>
+                <td>Samsung Galaxy S23</td>
+                <td>Electronics</td>
+                <td>8</td>
+                <td>Low Stock</td>
+              </tr>
+              <tr>
+                <td>103</td>
+                <td>Sony Headphones</td>
+                <td>Accessories</td>
+                <td>20</td>
+                <td>In Stock</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="card-footer">Last updated: 2024-12-22</div>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>

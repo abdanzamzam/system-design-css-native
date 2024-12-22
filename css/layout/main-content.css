@@ -1,0 +1,33 @@
+/* =============================
+    Main Content Layout Styles
+   ============================= */
+
+.main-content {
+    margin-left: 250px;
+    /* Adjust according to sidebar width */
+    padding: var(--spacing-unit);
+    background-color: var(--gray-100);
+    min-height: 100vh;
+    /* Ensure it fills the viewport height */
+    overflow-x: hidden;
+}
+
+.main-content h2 {
+    font-size: 1.75rem;
+    color: var(--gray-900);
+    margin-bottom: var(--spacing-md);
+}
+
+.main-content p {
+    font-size: 1rem;
+    color: var(--gray-800);
+    margin-bottom: var(--spacing-sm);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .main-content {
+        margin-left: 0;
+        padding: var(--spacing-sm);
+    }
+}

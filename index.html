@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>POS Dashboard</title>
+  <link rel="stylesheet" href="css/base/reset.css">
+  <link rel="stylesheet" href="css/base/variables.css">
+  <link rel="stylesheet" href="css/base/typography.css">
+  <link rel="stylesheet" href="css/layout/header.css">
+  <link rel="stylesheet" href="css/layout/sidebar.css">
+  <link rel="stylesheet" href="css/layout/main-content.css">
+  <link rel="stylesheet" href="css/components/button.css">
+  <link rel="stylesheet" href="css/components/card.css">
+  <link rel="stylesheet" href="css/components/table.css">
+  <link rel="stylesheet" href="css/utilities/utilities.css">
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header">
+    <h1>POS Dashboard</h1>
+    <nav>
+      <a href="#" class="button">Logout</a>
+    </nav>
+  </header>
+
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <h2>Menu</h2>
+    <ul>
+      <li><a href="index.html">Dashboard</a></li>
+      <li><a href="sales.html">Sales</a></li>
+      <li><a href="inventory.html">Inventory</a></li>
+      <li><a href="reports.html">Reports</a></li>
+      <li><a href="settings.html">Settings</a></li>
+    </ul>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <section class="mb-2">
+      <div class="card">
+        <h2 class="card-header">Welcome to POS Dashboard</h2>
+        <div class="card-body">
+          <p>Monitor your sales, manage inventory, and generate reports efficiently.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="card">
+        <h2 class="card-header">Sales Overview</h2>
+        <div class="card-body">
+          <table class="table table-primary">
+            <thead>
+              <tr>
+                <th>Item</th>
+                <th>Quantity</th>
+                <th>Total</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Product A</td>
+                <td>10</td>
+                <td>$200</td>
+              </tr>
+              <tr>
+                <td>Product B</td>
+                <td>5</td>
+                <td>$150</td>
+              </tr>
+              <tr>
+                <td>Product C</td>
+                <td>8</td>
+                <td>$320</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="card-footer">Updated: Today</div>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>

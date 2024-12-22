@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>POS Sales</title>
+  <link rel="stylesheet" href="css/base/reset.css">
+  <link rel="stylesheet" href="css/base/variables.css">
+  <link rel="stylesheet" href="css/base/typography.css">
+  <link rel="stylesheet" href="css/layout/header.css">
+  <link rel="stylesheet" href="css/layout/sidebar.css">
+  <link rel="stylesheet" href="css/layout/main-content.css">
+  <link rel="stylesheet" href="css/components/button.css">
+  <link rel="stylesheet" href="css/components/card.css">
+  <link rel="stylesheet" href="css/components/table.css">
+  <link rel="stylesheet" href="css/utilities/utilities.css">
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header">
+    <h1>POS Sales</h1>
+    <nav>
+      <a href="#" class="button">Logout</a>
+    </nav>
+  </header>
+
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <h2>Menu</h2>
+    <ul>
+      <li><a href="index.html">Dashboard</a></li>
+      <li><a href="sales.html">Sales</a></li>
+      <li><a href="inventory.html">Inventory</a></li>
+      <li><a href="reports.html">Reports</a></li>
+      <li><a href="settings.html">Settings</a></li>
+    </ul>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <section class="mb-2">
+      <div class="card">
+        <h2 class="card-header">Sales Summary</h2>
+        <div class="card-body">
+          <p>View and manage your recent sales transactions.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="card">
+        <h2 class="card-header">Recent Transactions</h2>
+        <div class="card-body">
+          <table class="table table-secondary">
+            <thead>
+              <tr>
+                <th>Transaction ID</th>
+                <th>Date</th>
+                <th>Customer</th>
+                <th>Total</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>#001</td>
+                <td>2024-12-22</td>
+                <td>John Doe</td>
+                <td>$120.00</td>
+                <td>Completed</td>
+              </tr>
+              <tr>
+                <td>#002</td>
+                <td>2024-12-21</td>
+                <td>Jane Smith</td>
+                <td>$85.00</td>
+                <td>Pending</td>
+              </tr>
+              <tr>
+                <td>#003</td>
+                <td>2024-12-20</td>
+                <td>Michael Brown</td>
+                <td>$230.00</td>
+                <td>Completed</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="card-footer">Last updated: 2024-12-22</div>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>

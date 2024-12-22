@@ -1,0 +1,54 @@
+/* =============================
+    Table Component Styles
+   ============================= */
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin-bottom: var(--spacing-unit);
+    font-size: 1rem;
+    color: var(--gray-800);
+}
+
+.table th,
+.table td {
+    padding: 0.75rem;
+    text-align: left;
+    border: 1px solid var(--gray-300);
+}
+
+.table th {
+    background-color: var(--gray-200);
+    font-weight: bold;
+    color: var(--gray-900);
+}
+
+.table tr:nth-child(even) {
+    background-color: var(--gray-100);
+}
+
+.table tr:hover {
+    background-color: var(--gray-200);
+}
+
+/* Table Variants */
+.table-primary th {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+.table-secondary th {
+    background-color: var(--secondary-color);
+    color: var(--white);
+}
+
+/* Responsive Table */
+.table-responsive {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.table-responsive .table {
+    min-width: 600px;
+}

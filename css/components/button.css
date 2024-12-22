@@ -1,0 +1,71 @@
+/* =============================
+    Button Component Styles
+   ============================= */
+
+.button {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: var(--border-radius-sm);
+    color: var(--white);
+    background-color: var(--primary-color);
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.button:hover {
+    background-color: darken(var(--primary-color), 10%);
+    transform: scale(1.02);
+}
+
+.button:active {
+    background-color: darken(var(--primary-color), 20%);
+    transform: scale(0.98);
+}
+
+/* Variants */
+.button-secondary {
+    background-color: var(--secondary-color);
+}
+
+.button-secondary:hover {
+    background-color: darken(var(--secondary-color), 10%);
+}
+
+.button-danger {
+    background-color: var(--danger-color);
+}
+
+.button-danger:hover {
+    background-color: darken(var(--danger-color), 10%);
+}
+
+.button-success {
+    background-color: var(--success-color);
+}
+
+.button-success:hover {
+    background-color: darken(var(--success-color), 10%);
+}
+
+/* Disabled Button */
+.button:disabled {
+    background-color: var(--gray-400);
+    cursor: not-allowed;
+    transform: none;
+}
+
+/* Sizes */
+.button-sm {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem;
+}
+
+.button-lg {
+    padding: 0.75rem 1.5rem;
+    font-size: 1.25rem;
+}
